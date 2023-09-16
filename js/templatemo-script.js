@@ -7,6 +7,11 @@ $(document).ready(function () {
 
     /*************** Navigation *****************/
 
+    $('.external-link').on( "click", function() {
+        window.open(this.getAttribute('href'), '_blank');
+        return false;
+    });
+    
     $("#tm-main-nav").singlePageNav({
         filter: ':not(.external)'
     });
